@@ -84,8 +84,8 @@ ul li{
     position: relative;
 }
 .order{
-    width: 460px;
-    height: 152px;
+    width: ;
+    height: 20px;
     border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 0px 0px 24px 0px #00000040;
@@ -94,6 +94,12 @@ ul li{
 }
 .order-item1{
     display: flex;
+}
+.cont{
+    padding: 40px;
+}
+.rat{
+    float: right;
 }
 .order-item1 h2{
     font-weight: 500;
