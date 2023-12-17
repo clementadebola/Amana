@@ -4,7 +4,9 @@
 }
 .container{
     padding: 20px;
+    /* width: 1440px; */
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -28,6 +30,7 @@ ul li{
 }
 .download{
     padding-right: 50px;
+    
 }
 
 /* hero section */
@@ -46,8 +49,8 @@ ul li{
 .hero-section h2{
     text-align: center;
     max-width: 300px;
-    font-weight: 700;
-    size: 64px;
+    font-weight: 900;
+    size: 70px;
     line-height: 40px;
 }
 .hero-section p{
@@ -222,7 +225,103 @@ ul li{
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+.mobile-section img{
+    width: 453px;
+    height: 507px;
+}
+.mobile-section-text h2{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 63.4px;
+    color: #FFFFFF;
+    max-width: 400px;
+    padding-bottom: 40px;
+}
+.mobile-section-text li{
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 28px;
+   padding-bottom: 40px;
+    width: 500px;
+}
+
+    /* download section style */
+
+.download-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    height: 230px;
+}
+.download-section h2{
+    font-weight: 700;
+    color: #14001F;
+    font-size: 52px;
+    line-height: 61px;
+    align-items: center;
+    height: 122px;
+    width: 600px;
+    padding-bottom: 20px;
+} 
+.download-section img{
+    width: 403px;
+    height: 61px;
+}  
+
+          /* Footer section */
+footer{
+    background: #14001F;
+    height: 200px;
+    padding: 79px 54px 79px 54px;
+    width: auto;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 0;
+    color: white;
+}
+footer img{
+    width: 100px;
+    height: 42px;
+}
+.products h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+}
+.products p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+}
+.company h2, .legal h2, .socials h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}  
+.company li, .legal li, .socials li{
+    font-size: 12px;
+   padding-bottom: 20px;
+}
+.location{
+    width: 300px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+ text-align: right;
+}
+       
 
 /* media query for the card section */
 @media screen and (max-width: 768px){
@@ -237,7 +336,31 @@ ul li{
 }
 @media screen and (max-width: 600px){
     .card1, .card2{
-    width: 400px;
+    width: 300px;
+    }
+    .subcard3{
+        padding-top: 50px;
+        justify-content:left;
+       padding-right: 20px;
+       font-weight: 200;
+       font-size: 11.49px;
+       color: white;
+       line-height: 14.52px;
+       height: 75px;
+       width: 250px;
+       /* padding-bottom: 30px; */
+       
+     }
+     .gpd{
+        border-radius: 30px;
+        padding: 5.74px;
+        gap: 12px;
+        width: 120px;
+        height: 28px;
+        margin-right: 130px;
+        display: flex;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -273,3 +396,76 @@ ul li{
 }
   
   }
+  /* media query for mobile section */
+  @media screen and (max-width: 768px) {
+    
+    .mobile-section{
+        
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .mobile-section img{
+        width: 300px;
+    }
+    .mobile-section-text h2{
+        width: 300px;
+    }
+    .mobile-section-text li{
+        width: 300px;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    
+    .mobile-section{
+    
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 670px;
+    }
+    .mobile-section img{
+        width: 250px;
+        height: 300px;
+    
+    }
+    .mobile-section-text h2{
+        width: 250px;
+        padding-left: 30px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .mobile-section-text li{
+        width: 200px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        padding-left: 30px;
+    }
+
+  }
+
+
+   /*media query for download section  */
+@media screen and (max-width: 600px) {
+    .download-section{
+        align-items: center;
+        /* padding-left: 20px; */
+    }
+    .download-section h2{
+       width: 330px;
+    font-size: 32px;
+    line-height: 37px;
+    align-items: center;
+    }
+    .download-section img{
+        width: 200px;
+        height: 46px;
+    }
+}
